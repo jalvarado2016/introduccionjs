@@ -1,3 +1,5 @@
+/************** PROGRAMA DE CUENTO************///////////
+/*****************
 console.log("Inicio de Programa");
 var sustantivo =prompt("Ingrese un sustantivo?");
 var adjetivo =prompt("Ingrese un adjetivo?");
@@ -7,5 +9,12 @@ document.write("<p>Se dice que el " +sustantivo+ " " +adjetivo+ " le gusta " +ve
 document.write("<p>El " +verbo+  " del " +sustantivo+ " asustaba por su " +adjetivo+ " feroz.</p>");
 document.write("<p>Al verlo que era " +adjetivo+ " todos salieron despavoridos por el " +verbo+ " del tremendisimo " +sustantivo+ " .</p>");
 console.log("Fin de Programa");
-
-
+******************/
+var segundosPorMinuto = 60;
+var minutosPorHora = 60;
+var horasPorDia = 24;
+var segundosPorDia = segundosPorMinuto * minutosPorHora * horasPorDia;
+document.write("<h1>Calculadora del Tiempo</h1><p>Hay " + segundosPorDia + " segundos en un dia</p>");
+var anios =prompt("Ingrese su edad?");
+var aniosdevida = anios * 365;
+document.write("<h1>Tu edad en dias</h1><p>Tienes " + aniosdevida + " dias vividos</p>");
