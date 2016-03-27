@@ -10,6 +10,8 @@ document.write("<p>El " +verbo+  " del " +sustantivo+ " asustaba por su " +adjet
 document.write("<p>Al verlo que era " +adjetivo+ " todos salieron despavoridos por el " +verbo+ " del tremendisimo " +sustantivo+ " .</p>");
 console.log("Fin de Programa");
 ******************/
+/*********calculadora de dias ***********/
+/****************************************
 var segundosPorMinuto = 60;
 var minutosPorHora = 60;
 var horasPorDia = 24;
@@ -18,3 +20,9 @@ document.write("<h1>Calculadora del Tiempo</h1><p>Hay " + segundosPorDia + " seg
 var anios =prompt("Ingrese su edad?");
 var aniosdevida = anios * 365;
 document.write("<h1>Tu edad en dias</h1><p>Tienes " + aniosdevida + " dias vividos</p>");
+**************************/
+var peliculasVistas = prompt("Cuantas peliculas haz visto este mes?");
+var seriesVistas = prompt("Cuantas series haz visto este mes?");
+var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
+alert ('Wow ! Haz visto ' + tiempoPantalla + " veces minimo la pantalla. ");
+console.log("Programa completado");  
