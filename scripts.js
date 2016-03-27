@@ -38,7 +38,14 @@ console.log("Programa completado");
 */////////////
 ///////////*PROGRAMA DE UN DADO*//////////////////
 /***********************************************/
+/*****
 console.log("Inicio del programa");
 var dado = Math.floor(Math.random() * 6) + 1;
 alert("Dado dice:" + dado); 
+console.log("Programa completado");
+******************/////
+console.log("Inicio del programa");
+var numero =prompt("Ingrese un numero?");
+var numeroaleatorio = Math.floor(Math.random() * + numero) + 1;
+alert("Su numero aleatorio es :" + numeroaleatorio); 
 console.log("Programa completado");
