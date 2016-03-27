@@ -29,8 +29,16 @@ var anios =prompt("Ingrese su edad?");
 var aniosdevida = anios * 365;
 document.write("<h1>Tu edad en dias</h1><p>Tienes " + aniosdevida + " dias vividos</p>");
 **************************/
+/**********
 var peliculasVistas = prompt("Cuantas peliculas haz visto este mes?");
 var seriesVistas = prompt("Cuantas series haz visto este mes?");
 var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
 alert ('Wow ! Haz visto ' + tiempoPantalla + " veces minimo la pantalla. ");
 console.log("Programa completado");  
+*/////////////
+///////////*PROGRAMA DE UN DADO*//////////////////
+/***********************************************/
+console.log("Inicio del programa");
+var dado = Math.floor(Math.random() * 6) + 1;
+alert("Dado dice:" + dado); 
+console.log("Programa completado");
