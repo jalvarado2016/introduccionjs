@@ -44,8 +44,39 @@ var dado = Math.floor(Math.random() * 6) + 1;
 alert("Dado dice:" + dado); 
 console.log("Programa completado");
 ******************/////
-console.log("Inicio del programa");
+////*NUMERO ALEARIO ENTRE EL 1 Y EL NUMERO INGRESADO*/////
+/*console.log("Inicio del programa");
 var numero =prompt("Ingrese un numero?");
 var numeroaleatorio = Math.floor(Math.random() * + numero) + 1;
 alert("Su numero aleatorio es :" + numeroaleatorio); 
+console.log("Programa completado");*/
+
+console.log("Inicio del programa");
+var adivinoCorrectamente = false;
+document.write("<h1> Adivina el numero y gana un guiso!");
+var numsave = Math.floor(Math.random()*10) + 1;
+var numero =prompt("Adivina el numero secreto?");
+
+if (parseInt(numero === numsave)){
+adivinoCorrectamente = true;
+	}
+	else if (parseInt(numero)>numsave) {
+		alert("El numero a adivinar es menor al que ingresastes");
+		var nuevoIntento = prompt("Intentalo nuevamente");
+		if (parseInt(nuevoIntento)===numsave) {
+		adivinoCorrectamente = true;
+		}
+	}
+	else if(parseInt(numero)<numsave)
+	{alert("El numero es mayor al que escribistes");
+	var nuevoIntento = prompt("Intentalo nuevamente");
+	if(parseInt(nuevoIntento)===numsave)
+	{adivinoCorrectamente = true;
+	}
+	}
+if(adivinoCorrectamente){
+	document.write("<p>Ganaste, Felicitaciones... eeeeeee</p>"); }
+	else{
+		document.write("<p>Ja, ja, perdiste. El numero correcto era: " + numsave + "</p>");
+	}
 console.log("Programa completado");
